@@ -1,0 +1,20 @@
+CONDITIONALS.
+It is extremely important the spaces and tabs.
+Correct alignment of a switch statement:
+
+if condition:
+	execute_action
+else:
+	execute_else
+	
+
+An else if statement is declared as "elif" in Python
+
+Operator	Example		Meaning
+not			not x		True if x is False
+						False if x is True
+						(Logically reverses the sense of x)
+or			x or y		True if either x or y is True
+						False otherwise
+and			x and y		True if both x and y are True
+						False otherwise

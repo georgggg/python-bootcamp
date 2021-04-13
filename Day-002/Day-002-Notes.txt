@@ -1,0 +1,15 @@
+#F-Strings
+
+score = 0
+height = 1.8
+isWinning = True
+
+print(f"your score is {score}, your height is {height}, you are winning is {isWinning}")
+
+
+The F-Strings are used to render variables inside a string. It works by adding an 'f' before the string quotes and enclosing inside curly braces the variable name. Similar to using "Magic Quotes" in PHP.
+
+String Formatting:
+Be careful when trying to print numbers as string in the output window when using the "round()" function, since for numbers that have only 1 decimal, it will print only 1 decimal even when you specify round to 2 decimals i.e. "round(num, 2)", this is a Python flaw and it needs to be formatted by hand when you mean to always print 2 decimals. Use the following approach:
+
+	"{:.2f}".format(num)
