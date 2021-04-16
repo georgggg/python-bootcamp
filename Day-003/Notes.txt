@@ -18,3 +18,14 @@ or			x or y		True if either x or y is True
 						False otherwise
 and			x and y		True if both x and y are True
 						False otherwise
+						
+RANDOM NUMBERS:
+It is a python module (pseudo random generator).
+
+You use it like:
+	import random	
+	
+	random_integer = random.randit(x, y)  --> You get a random number between X and Y including both.
+	random_float = random.random() --> You get a random number between 0 and 0.99999999999xxx
+	
+	
