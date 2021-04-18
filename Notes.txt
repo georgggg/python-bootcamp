@@ -2,6 +2,18 @@ Python main documentation:
 https://docs.python.org/3/library/functions.html
 
 
+MODULES:
+In Python you can import other modules (built-in or custom) to extend the functionality of Python in your code.
+
+	import module_name
+	from module_name import variable1, variable2
+
+After any of the above options you could start using these variables in your code like this accordingly:
+	module_name.variable1
+	or:
+	variable1
+
+
 DATA TYPES:
 
 STRING:
@@ -39,7 +51,7 @@ You use it like:
 	
 	random_integer = random.randit(x, y)  --> You get a random number between X and Y including both.
 	random_float = random.random() --> You get a random number between 0 and 0.99999999999xxx
-	
+	oter important random module functions: random.choice(x), random.shuffle(x)
 DATA STRUCTURES:
 LISTS:
 Arrays in Python are called "lists" ==> Use [] to define, assign and recall elements from a list.
@@ -64,8 +76,27 @@ To fetch and extract:
 	
 To delete the list elements:
 	list.clear()
-	
+
+To select from one of the elements in a list:
+	random.choice(list) 
+
+To reorder a list:
+	random.shuffle(list)
+
 You can nest lists within lists. Just use the same [] definition of the inner elements.
 
 
+CODE BLOCKS, FUNCTIONS, WHILE LOOPS:
+Cerating a function is:
+	def funcName(xArg):
+		#function code block here
 
+For loops are used with a range() built-in function.
+	for i in range(s, e):  --> This will iterate over a series of steps that go from s to e, excluding e.
+								range can also be range(x) --> it includes 
+While loops:
+	Works like any while loop in any other language:
+		while "condition":
+		
+		i.e. while salary > 0:
+				buy_stuff()
