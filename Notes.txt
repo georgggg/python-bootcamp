@@ -43,6 +43,7 @@ or			x or y		True if either x or y is True
 and			x and y		True if both x and y are True
 						False otherwise
 						
+
 RANDOM NUMBERS:
 It is a python module (pseudo random generator).
 
@@ -52,6 +53,8 @@ You use it like:
 	random_integer = random.randit(x, y)  --> You get a random number between X and Y including both.
 	random_float = random.random() --> You get a random number between 0 and 0.99999999999xxx
 	oter important random module functions: random.choice(x), random.shuffle(x)
+
+
 DATA STRUCTURES:
 LISTS:
 Arrays in Python are called "lists" ==> Use [] to define, assign and recall elements from a list.
@@ -73,6 +76,9 @@ To remove:
 
 To fetch and extract:
 	list.pop([i])  It retrieves and removes the element at position i. If no value for i is provided it will retrieve and remove the last elemen on the list.
+
+To get the position of an element in a list:
+	list.index(x)  Where x is the value to search in the list for.
 	
 To delete the list elements:
 	list.clear()
@@ -83,6 +89,8 @@ To select from one of the elements in a list:
 To reorder a list:
 	random.shuffle(list)
 
+To search for a value/element in a list you do:
+	h = "x in list"  where x is the value to search for, it will return "true" if it finds x in the list
 You can nest lists within lists. Just use the same [] definition of the inner elements.
 
 
@@ -100,3 +108,31 @@ While loops:
 		
 		i.e. while salary > 0:
 				buy_stuff()
+
+FUNCTIONS:
+ You start with the "def" keyword:
+	def function_name(something):			--> "something" is the PARAMETER
+		"Code to execute"
+		
+	function_name(456)  #This is calling your custom function, "456" is the ARGUMENT
+
+By default Python functions work with positional arguments:
+	def ma_function(a, b, c):
+		#xxxx
+	
+	ma_function(1,2,3) --> This will assign as expected a=1, b=2, c=3 inside the ma_function code block.
+
+But it can also work with keyword arguments, that is:
+	ma_function(a=1,b=2,c=3) --> This will have the same effect as calling: ma_function(c=3,a=1,b=2)  The order of the arguments is now not relevant.
+	
+
+DICTIONARIES:
+To create:	this_dictionary = {"Key1": "Value 1", "Key2": "Value 2", "Key3": "Value 3"}
+To fetch:   this_dictionary["Key1"]
+To modify/assign value: 	this_dictionary["KeyN"] = "New Value gets added to the referenced Key"
+To loop:	for key in this_dictionary:
+				print(this_dictionary[key]		--> By default this looping returns only the Key and not the value.
+Delcare an empty dictionary: this_dictionary = {}
+
+	
+	
