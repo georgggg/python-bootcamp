@@ -134,5 +134,20 @@ To loop:	for key in this_dictionary:
 				print(this_dictionary[key]		--> By default this looping returns only the Key and not the value.
 Delcare an empty dictionary: this_dictionary = {}
 
+NESTING DICTIONARIES:
+You can nest several other pieces of data inside a dictionary (value):
+	Nesting a List in a Dictionary:
+		travel_log = { "Germany": ["Berlin", "Hamburg", "Stuttgart"] }
+	Nesting a Dictionary in a Dictionary:
+		travel_log = { "France": {"cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 12 } }
+
+NESTING LISTS:
+You can nest a List in a List and a Dictionary in a List.
+	Nesting a List in a List:
+		a_list = [9, 0, 100, [80, 4, 6]]
+	Nesting a Dictionary in a List:
+		a_list = [ {"country": "Germany", "cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5}, {"key1": "value 1", "key2": "value 2"}]
+
+
 	
 	
