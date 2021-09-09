@@ -60,7 +60,7 @@ LISTS:
 Arrays in Python are called "lists" ==> Use [] to define, assign and recall elements from a list.
 
 I.e. states = ['Delaware', 'Maryland', 'South Carolina']
-
+To retrieve the number of items in a list, use the function len(x), where x is the variable list
 To reference Delaware I Would use "states[0]" and South Carolina I would use "states[-1]"
 
 To add elements to list: states.append("New Element")
