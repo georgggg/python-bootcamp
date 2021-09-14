@@ -149,5 +149,38 @@ You can nest a List in a List and a Dictionary in a List.
 		a_list = [ {"country": "Germany", "cities_visited": ["Berlin", "Hamburg", "Stuttgart"], "total_visits": 5}, {"key1": "value 1", "key2": "value 2"}]
 
 
-	
-	
+
+SCOPE:
+In python there is Global Scope. Which means you can declare a variable at the start of your script and then use it wihtin functions without having to pass it like an argument. WARNING: You can use it but you cannot modify it inside a function. Hence:
+
+#THIS WILL NOT WORK BECAUSE YOU HAVE NOT DEFINED THE "cars" VARIABLE INSIDE THE FUNCTION'S LOCAL SCOPE
+cars = 2
+def add_car():
+	cars += 1
+
+
+#THIS WILL WORK BUT IS NOT A GOOD IDEA AND IS BY CONVENTION A BAD PRACTICE IN PYTHON.
+cars = 2
+def add_car():
+	global cars
+	cars += 1
+		
+#THIS WILL NOT WORK BECAUSE YOU HAVE NOT DEFINED THE "cars" VARIABLE INSIDE THE FUNCTION'S LOCAL SCOPE
+#IN THIS EXAMPLE YOU ARE NOT MODIFYING THE GLOBAL SCOPE, BUT JUST USING IT TO RETURN A MODIFIED (NEW VARIABLE) RESPONSE
+cars = 2
+def add_car():
+	return cars +1
+
+total = add_car()
+print(f"You added 1 car for a total of {total}"
+
+IN PYTHON THE FUNCTIONS WILL CREATE A LOCAL SCOPE WHICH IS ISOLATED FROM THE GLOBAL (OUTTER MOST) SCOPE AND THE SCOPE FROM OTHER FUNCTIONS. HOWEVER IT CAN ACCESS OTHER VARIABLES ONLY DECLARE AT THE GLOBAL SCOPE.
+
+THIS HELPS TO DEVELOPE THE CONCEPT OF CONSTANTS IN PYTHON. BY CONVENTION CONSTANTS ARE VARIABLES THAT ARE DECLARED AT THE GLOBAL SCOPE, MEANT TO REMAIN WITH THE INITIAL VALUE DURING THE WHOLE RUNTIME AND DECLARED WITH NAMES IN UPPERCASE:
+
+THIS_IS_A_CONSTANT = 1
+PI = 3.1416
+GOOGLE_URL = "https://www.google.com"
+
+
+
