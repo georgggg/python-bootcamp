@@ -183,4 +183,7 @@ PI = 3.1416
 GOOGLE_URL = "https://www.google.com"
 
 
+DEBUGGING:
+Use TONY or Python Tutor to debug your code and see execution steps.
 
+pythontutor.com
